@@ -1,0 +1,150 @@
+/* ProductPage.css */
+
+.product-container {
+    padding: 20px;
+    background-color: #1e1e2f;
+    color: rgba(255, 255, 255, 0.95);
+    font-family: 'Montserrat', sans-serif;
+    min-height: 90vh;
+  }
+  
+  .product-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .product-form {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    color: #9e9ea4;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #263043;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .submit-btn {
+    background-color: #2962ff;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0039cb;
+  }
+
+  /* Submitted Products Section */
+.submitted-products {
+    width: 190%;
+    background-color: #2a2a3e;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f5f5f5;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.product-table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.table-header,
+.table-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr; /* Adjust as needed */
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: #e6e6e6;
+    border-radius: 5px;
+}
+
+.table-header {
+    font-weight: bold;
+    color: #f5f5f5;
+    background-color: #444;
+}
+
+.table-cell {
+    padding: 8px;
+}
+
+.no-products {
+    color: #b3b3b3;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .table-header, .table-row {
+        grid-template-columns: 1fr 1fr;
+        font-size: 14px;
+    }
+
+    .table-cell {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .table-header, .table-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.delete-btn {
+    background-color: rgb(207, 79, 79);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+  
